@@ -23,7 +23,7 @@ const SideBar = () => (
 const CompanyHeader = () => (
     <div className='channel-list__header '>
         <p className='channel-list__header__text'>
-            Personal Trainer
+            Muscle Mate
         </p>
     </div>
 )
