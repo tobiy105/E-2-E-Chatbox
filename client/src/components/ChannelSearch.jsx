@@ -11,7 +11,7 @@ const ChannelSearch = () => {
 
     }
     catch (error) {
-        setQuery('')
+      setQuery('')
     }
   }
 
@@ -25,19 +25,19 @@ const ChannelSearch = () => {
 
   return (
     <div className="channel-search__container">
-        <div className="channel-search__input__wrapper">
-            <div className="channel-search__input__icon">
-                <SearchIcon />
-            </div>
-            <input 
-                className = "channel-search__input__text"
-                placeholder = "Search"
-                type = "text"
-                value = {query}
-                onCharge = {onSearch}
-                
-            />
+      <div className="channel-search__input__wrapper">
+        <div className="channel-search__input__icon">
+          <SearchIcon />
         </div>
+        <input
+          className="channel-search__input__text"
+          placeholder="Search"
+          type="text"
+          value={query}
+          onCharge={onSearch}
+
+        />
+      </div>
     </div>
   )
 }

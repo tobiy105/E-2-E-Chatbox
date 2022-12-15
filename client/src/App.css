@@ -1,5 +1,6 @@
 :root {
-    --primary-color: #005fff;
+    /* --primary-color: #005fff; */
+    --primary-color: #ffa200;
     --primary-color-alpha: #005fff1a;
   }
   
@@ -27,7 +28,8 @@
     justify-content: center;
   
     padding: 2rem;
-    background: #005fff;
+    /* background: #005fff;  */
+    background:  #ffa200;
   }
   
   .auth__form-container_image {
@@ -101,8 +103,10 @@
   
   .auth__form-container_fields-content_input input:focus,
   .auth__form-container_fields-content_input input:active {
-    box-shadow: 0px 0px 0px 1.5px #005fff;
-    border-color: #005fff;
+    /* box-shadow: 0px 0px 0px 1.5px #005fff; */
+    box-shadow: 0px 0px 0px 1.5px #ffa200;
+    /* border-color: #005fff; */
+    border-color: #ffa200;
   }
   
   .auth__form-container_fields-content_input-password {
@@ -120,8 +124,10 @@
   
   .auth__form-container_fields-content_button button {
     border-radius: 4px;
-    background: #005fff;
-    border: 1px solid #005fff;
+    /* background: #005fff; */
+    background: #ffa200;
+    /* border: 1px solid #005fff; */
+    border: 1px solid #ffa200;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -132,7 +138,8 @@
   }
   
   .auth__form-container_fields-content_button button:hover {
-    background: #0066ff;
+    /* background: #0066ff; */
+    background: #ffa200;
   }
   
   .auth__form-container_fields-account {
