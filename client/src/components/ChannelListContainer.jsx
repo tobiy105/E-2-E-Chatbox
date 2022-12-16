@@ -5,15 +5,17 @@ import Cookies from 'universal-cookie';
 import webIcon from '../assets/index.png'
 import LogoutIcon from '../assets/logout.png'
 
-const SideBar = () => (
+const cookies = new Cookies();
+
+const SideBar = ({logout}) => (
     <div className='channel-list__sidebar'>
         <div className='channel-list__sidebar__icon1'>
             <div className='icon1__inner'>
                 <img src={webIcon} alt='Personal Trainer' width="30"></img>
             </div>
         </div>
-        <div className='channel-list__sidebar__icon1'>
-            <div className='icon1__inner'>
+        <div className='channel-list__sidebar__icon2'>
+            <div className='icon1__inner' onClick= {logout}>
                 <img src={LogoutIcon} alt='Logout' width="30"></img>
             </div>
         </div>
@@ -28,11 +30,22 @@ const CompanyHeader = () => (
     </div>
 )
 
-
 const ChannelListContainer = () => {
+    const logout = () => {
+        cookies.remove("token");
+        cookies.remove('userId');
+        cookies.remove('username');
+        cookies.remove('fullName');
+        cookies.remove('imageURL');
+        cookies.remove('hashedPassword'); 
+        cookies.remove('contactNumber'); 
+
+        window.location.reload();
+    }
+
     return (
         <>
-            <SideBar />
+            <SideBar logout={logout} />
             <div className='channel-list__list__wrapper'>
                 <CompanyHeader />
                 <ChannelSearch />
