@@ -30,7 +30,10 @@ const signup = async (req, res) => {
 
     }
 };
-const login = async (req, res) => {
+const login = (req, res) => {
+    async function fetchData()
+    {
+   
     try {
         const { username, password } = req.body;
 
@@ -55,7 +58,9 @@ const login = async (req, res) => {
 
         res.status(500).json({ message: error }); 
 
+        }
     }
+    fetchData();
 };
 
 module.exports = { signup, login }

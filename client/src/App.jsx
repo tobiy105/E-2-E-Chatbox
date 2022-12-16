@@ -18,9 +18,9 @@ if(authToken) {
       id: cookies.get('userId'),
       name: cookies.get('username'),
       fullName: cookies.get('fullName'),
-      image: cookies.get('avatarURL'),
+      image: cookies.get('imageURL'),
       hashedPassword: cookies.get('hashedPassword'),
-      phoneNumber: cookies.get('phoneNumber'),
+      contactNumber: cookies.get('contactNumber'),
   }, authToken)
 }
 
