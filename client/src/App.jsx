@@ -13,14 +13,14 @@ const authToken = cookies.get("token");
 
 const client = StreamChat.getInstance(apiKey);
 
-if(authToken) {
+if (authToken) {
   client.connectUser({
-      id: cookies.get('userId'),
-      name: cookies.get('username'),
-      fullName: cookies.get('fullName'),
-      image: cookies.get('imageURL'),
-      hashedPassword: cookies.get('hashedPassword'),
-      contactNumber: cookies.get('contactNumber'),
+    id: cookies.get('userId'),
+    name: cookies.get('username'),
+    fullName: cookies.get('fullName'),
+    image: cookies.get('imageURL'),
+    hashedPassword: cookies.get('hashedPassword'),
+    contactNumber: cookies.get('contactNumber'),
   }, authToken)
 }
 

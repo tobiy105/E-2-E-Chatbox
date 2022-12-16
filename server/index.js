@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 5000;
 require('dotenv').config();
 
 app.use(cors(
-    {origin: "*",}
-    ));
+    { origin: "*", }
+));
 app.use(express.json());
 app.use(express.urlencoded());
 

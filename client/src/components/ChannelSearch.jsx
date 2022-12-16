@@ -34,7 +34,7 @@ const ChannelSearch = () => {
           placeholder="Search"
           type="text"
           value={query}
-          onCharge={onSearch}
+          onChange={onSearch}
 
         />
       </div>
