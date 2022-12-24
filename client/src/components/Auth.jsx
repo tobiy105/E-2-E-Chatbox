@@ -4,8 +4,6 @@ import axios from 'axios';
 
 import signinImage from '../assets/signup.jpg';
 
-const cookies = new Cookies();
-
 const initialState = {
     fullName: '',
     username: '',
@@ -14,6 +12,7 @@ const initialState = {
     contactNumber: '',
     imageURL: '',
 }
+
 
 const Auth = () => {
     const [form, setForm] = useState(initialState);
