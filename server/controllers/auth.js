@@ -1,11 +1,15 @@
 const { connect } = require('getstream');
 const bcrypt = require('bcrypt');
-const StreamChat = require('stream-chat');
+const StreamChat = require('stream-chat').StreamChat;
 const crypto = require('crypto');
 
-const api_key = process.env.STREAM_API_KEY;
-const api_secret = process.env.STREAM_API_SECRET;
-const app_id = process.env.STREAM_APP_ID;
+// const api_key = process.env.STREAM_API_KEY;
+// const api_secret = process.env.STREAM_API_SECRET;
+// const app_id = process.env.STREAM_APP_ID;
+
+const api_key = 'd54gavmu7r3z';
+const api_secret = '5ustz7jm7skqtk8whpdq99ta7baert2z2d7q86abwpkz68vkb5nc82kyfupmgype';
+const app_id = '1224366';
 
 const signup = (req, res) => {
     async function fetchData() {

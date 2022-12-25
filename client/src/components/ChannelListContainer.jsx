@@ -2,8 +2,9 @@ import React from 'react';
 import { ChannelList, useChatContext } from 'stream-chat-react';
 import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
 import Cookies from 'universal-cookie';
-import webIcon from '../assets/index.png'
-import LogoutIcon from '../assets/logout.png'
+import webIcon from '../assets/index.png';
+import LogoutIcon from '../assets/logout.png';
+
 
 const cookies = new Cookies();
 
